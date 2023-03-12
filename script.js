@@ -50,6 +50,7 @@ document.getElementById("cross").addEventListener('click', ()=>{
     document.getElementsByClassName("body")[0].classList.remove("blur");
     document.getElementsByClassName("sidebar")[0].classList.remove("slideIn");
     document.getElementsByClassName("sidebar")[0].classList.add("slideOut");
+    document.getElementsByClassName("sidebar")[0].style.display="none"
     document.getElementsByClassName("body")[0].classList.add("noBlur");   
 })
 

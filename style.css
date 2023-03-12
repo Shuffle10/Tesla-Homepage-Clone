@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
 }
 
 body{
@@ -213,7 +214,6 @@ body{
 
 .btn-container{
     display: flex;
-    margin-bottom: 20px;
     gap: 1.2vw;
 }
 
@@ -225,6 +225,10 @@ body{
     font-size: 14px;
     font-weight: 700;
     cursor: pointer;
+}
+
+.bottom-items{
+    margin-bottom: 20px;
 }
 
 
