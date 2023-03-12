@@ -4,11 +4,13 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    overflow: hidden;
 }
 
 body{
     max-height: 100vh;
+}
+
+body, .sidebar{
     overflow: hidden;
 }
 
@@ -35,10 +37,9 @@ body{
     z-index: 10;
     font-size: 14px;
     flex-direction: column;
-    overflow-y: auto;
+    overflow-y: scroll;
     overflow-x: hidden;
     display: none;
-    /* transform: translateX(400px); */
 }
 
 .cross-btn img{
@@ -58,6 +59,7 @@ body{
 
 .slideOut{
     animation: slideOut 0.5s 1 forwards;
+    overflow: hidden;
 }
 
 @keyframes slideIn{
@@ -94,21 +96,29 @@ body{
 
 @keyframes blur {
     0%{
+        transform: scale(1);
+
         filter: blur(0px);
     }
 
     100%{
         filter: blur(8px);
+        transform: scale(1.1);
+
     }
 }
 
 @keyframes noblur {
     0%{
         filter: blur(8px);
+        transform: scale(1.1);
+
     }
 
     100%{
         filter: blur(0px);
+        transform: scale(1);
+
     }
 }
 
