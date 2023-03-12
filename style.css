@@ -291,13 +291,13 @@ body, .sidebar{
     }
 }
 
-@media screen and (max-width: 760px){
-   
-
-}
-
 
 @media screen and (max-width: 760px) {
+
+    .body{
+        background-position:45%;
+    }
+
     .btn-container{
         display: flex;
         flex-direction: column;
